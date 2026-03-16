@@ -1,0 +1,54 @@
+@use 'sass:color';
+@use '../variables' as *;
+
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid $border-grid;
+  transition: background-color $transition-fast, box-shadow $transition-fast;
+
+  &--empty,
+  &--marked {
+    background-color: $bg-cell-empty;
+
+    &:hover {
+      background-color: $bg-cell-marked;
+      box-shadow: inset 0 0 0 1px $accent-light;
+    }
+  }
+
+  &--wrong {
+    background-color: #ffebee;
+    border-color: #e57373;
+
+    &:hover {
+      background-color: #ffcdd2;
+    }
+  }
+
+  &--filled {
+    background-color: $bg-cell-filled;
+    border-color: color.adjust($bg-cell-filled, $lightness: -8%);
+  }
+
+  &--highlighted {
+    box-shadow: inset 0 0 0 2px $accent;
+  }
+
+  &--selected {
+    box-shadow: inset 0 0 0 3px #1a1a1a;
+    z-index: 1;
+  }
+}
+
+.cell__mark {
+  color: $text-secondary;
+}
+
+.cell__wrong {
+  color: #c62828;
+}

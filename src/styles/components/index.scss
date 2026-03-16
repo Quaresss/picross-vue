@@ -1,0 +1,8 @@
+// Component styles — импортируются в соответствующие .vue файлы
+@forward 'base-button';
+@forward 'header';
+@forward 'cell';
+@forward 'game-grid';
+@forward 'toolbar';
+@forward 'level-card';
+@forward 'victory-modal';

@@ -1,0 +1,114 @@
+@use '../variables' as *;
+
+.faq {
+  min-height: 100vh;
+  padding: 1rem;
+  padding-top: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 480px) {
+    padding: 1.5rem;
+    padding-top: 6rem;
+  }
+}
+
+.faq__content {
+  width: 100%;
+  max-width: 42rem;
+}
+
+.faq__section {
+  background-color: $bg-panel;
+  border-radius: $border-radius-xl;
+  border: 2px solid $border-light;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: $shadow-sm;
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+.faq__section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 1rem;
+}
+
+.faq__list {
+  list-style: none;
+  color: $text-secondary;
+  line-height: 1.8;
+
+  li {
+    padding-left: 1rem;
+    position: relative;
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: $accent;
+    }
+  }
+}
+
+.faq__intro {
+  font-size: 0.9375rem;
+  color: $text-secondary;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.faq__controls-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faq__control-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: $bg-app;
+  border-radius: $border-radius-md;
+  border: 1px solid $border-light;
+}
+
+.faq__control-icon {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, $accent, $accent-hover);
+  color: white;
+  border-radius: $border-radius-md;
+}
+
+.faq__control-content {
+  min-width: 0;
+}
+
+.faq__control-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 0.35rem;
+}
+
+.faq__control-desc {
+  font-size: 0.8125rem;
+  color: $text-secondary;
+  line-height: 1.5;
+}

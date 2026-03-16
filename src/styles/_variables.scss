@@ -1,0 +1,49 @@
+// Nintendo Picross design system
+// Стиль Picross DS / 3DS / Switch — светлая тема, чистый минимализм
+
+// Backgrounds — кремовые, тёплые тона как в Picross S
+$bg-app: #f5f0e8;
+$bg-panel: #ffffff;
+$bg-cell-empty: #ffffff;
+$bg-cell-filled: #0080ff; // Nintendo blue
+$bg-cell-marked: #f0f0f0;
+
+// Accent — фирменный синий Nintendo
+$accent: #0080ff;
+$accent-hover: #0066cc;
+$accent-light: #e6f2ff;
+
+// Text
+$text-primary: #2d2d2d;
+$text-secondary: #6b6b6b;
+$text-on-accent: #ffffff;
+
+// Difficulty — мягкие, дружелюбные цвета
+$easy: #22a34a;
+$medium: #e6a800;
+$hard: #e04040;
+
+// Borders — тонкие, ненавязчивые
+$border-light: #e0e0e0;
+$border-default: #c8c8c8;
+$border-grid: #d0d0d0;
+$border-grid-thick: #a0a0a0;
+
+// Shadows — мягкие, как в Nintendo UI
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+// Sizing
+$header-height: 4rem;
+$cell-size-min: 28px;
+$cell-size-mid: 36px;
+$cell-size-max: 48px;
+$border-radius-sm: 6px;
+$border-radius-md: 10px;
+$border-radius-lg: 14px;
+$border-radius-xl: 18px;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-normal: 0.2s ease;
