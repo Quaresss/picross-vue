@@ -19,3 +19,4 @@ const gameUI = useGameUIStore()
 <style lang="scss">
 @use './styles/main.scss';
 </style>
+git add .gitignore
